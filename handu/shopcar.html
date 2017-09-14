@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/public.css" type="text/css" />
+		<link rel="stylesheet" href="style/shopcar.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/shopcar.js"></script>
+	</head>
+	<body>
+		<div id="global_top">
+			<script type="text/javascript">$("#global_top").load("public.html .global_nav");</script>
+		</div>
+		<div class="car_header layout">
+			 <a href=""></a>
+			 <div class="car_header_right"></div>
+		</div>
+		<div class="shop_car layout">
+			<div class="shop_car_title">
+				<span>温馨提示：</span>购物车中商品无法保留库存，请您及时下单结算
+			</div>
+			<div class="car_top">
+				<div class="car_common" style="width: 500px;">商品名称</div>
+				<div class="car_common" style="width: 117px;">售价</div>
+				<div class="car_common" style="width: 143px;">数量</div>
+				<div class="car_common" style="width: 115px;">小计</div>
+				<div class="car_common" style="width: 145px;">操作</div>
+			</div>
+			<div class="car_list">
+				<!--<div class="car_none">
+					<img src="images/shopcar/gouwuc.png"/>
+					<p>您的购物车内没有商品，请挑选心仪的商品吧！</p>
+					<span><a href="">去挑选喜欢的商品</a></span>
+				</div>-->
+				<!--<ul class="car_goods">-->
+					<!--<li>
+						<h3>品牌：HSTYLE女装</h3>
+						<ul class="car_good">
+							<li class="car_good_detail">
+								<a href=""><img src="images/shopcar/1061064_thumb_G_1499753947915.jpg"/></a>
+								<div class="car_good_name">
+									<a href="">韩都衣舍2017韩版女装夏装新款显瘦蕾丝外搭两件套连衣裙RW7505瑒</a>
+									<p>颜色:<span class="good_color">黑色 </span>尺码:<span class="good_size"> S</span></p>
+								</div>
+							</li>
+							<li class="car_good_price">
+								<div>
+									<del>¥846.00</del><br />
+									<span>¥148</span>
+								</div>
+								
+							</li>
+							<li class="car_good_number">
+								<span id="car_subtract">
+									-
+								</span>
+								<input type="text" />
+								<span id="car_increase">
+									+
+								</span>
+							</li>
+							<li class="car_good_money">
+								¥148
+							</li>
+							<li class="car_good_del">
+								<div class="del_middle">
+									<a href="">移入收藏夹</a><br />
+									<a href="">删除</a>
+								</div>
+							</li>
+							<li class="car_good_other">
+								<a href="">【全智贤秋装新品发布会】满199减20/满299减50/满399减100！</a>
+							</li>
+						</ul>
+					</li>-->
+				<!--</ul>-->
+				<!--<div class="car_bottom">
+					<div class="car_bottom_right">
+						<table>
+		             		<tr>
+			                	<td><span id="goods_allnum" style=" color: #C80A28;">1</span>件商品</td>
+			                	<td class="td_totle">总计：</td>
+			              	    <td id="total_Price" class="td_price">￥148.00</td>
+		             		</tr>
+		              		<tr>	
+			                    <td colspan="2">满立减：</td>
+			                	<td id="total_fanxian">- ￥0.00</td>
+		              		</tr>
+		              		 <tr>	
+			                    <td colspan="2">税费：</td>
+			                	<td id="total_fanxian">- ￥0.00 </td>
+		              		</tr>
+		            	</table>
+					</div>
+				</div>
+				<div class="car_totle">
+					<p id="price_totle">
+						购物金额总计： <span>￥ 148</span>
+					</p>
+				</div>
+				-->
+			</div>
+			<a href="" class="continue"></a>
+			<a href="" class="account"></a>
+		</div>
+		<div class="car_recommend layout">
+			<div class="recommend_tab">
+				韩都网站为你推荐
+				<span><a href="javascript:void(0)" class="visit current">最近浏览过的商品</a><a href="javascript:void(0)" class="collect">最近收藏的</a></span>
+			</div>
+			<div class="recommend_all">
+				<ul class="visited">
+					<!--<li><a href=""><img src="images/shopcar/1477632277549701332.jpg" alt="" />
+					<p>韩都衣舍2016秋装新打底衫上衣女</p><span class="price">¥108</span></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>-->
+				</ul>
+				<ul class="collected" style="display: none;"></ul>
+			</div>
+		</div>
+		<div id="register_bottom">
+		<script type="text/javascript">$("#register_bottom").load("public.html .bottom");</script>
+	</div>
+	<div id="register_footer">
+		<script type="text/javascript">$("#register_footer").load("public.html .footer");</script>
+	</div>	
+	<div id="right_box">
+		<script type="text/javascript">$("#right_box").load("public.html .right_box",function(){
+			$(window).scroll(function(){
+				if($(document).scrollTop()>200){
+					$(".right_box").show();
+				}else{
+					$(".right_box").hide();
+				}
+			})
+			$(".right_box>a").mouseenter(function(){
+				$(this).css("background-position-x","-78px")
+			})
+			$(".right_box>a").mouseout(function(){
+				$(this).css("background-position-x","0")
+			})
+		});
+		</script>
+	</div>
+	</body>
+</html>

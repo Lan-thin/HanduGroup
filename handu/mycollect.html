@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/public.css" type="text/css" />
+		<link rel="stylesheet" href="style/mycollect.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/mycollect.js"></script>
+	</head>
+	<body>
+		<div id="global_top">
+			<script type="text/javascript">$("#global_top").load("public.html .global_nav");</script>
+		</div>
+		<div id="global_header">
+			<script type="text/javascript">$("#global_header").load("public.html .global_header");</script>
+		</div>
+		<div id="global_nav">
+			<script type="text/javascript">$("#global_nav").load("public.html .header_nav",function(){
+				$(".nav_all").mouseover(function(){
+					$(".pullList").show();
+				})
+				$(".nav_all").mouseout(function(){
+					$(".pullList").hide();
+				})
+				$(".header_nav_all").find(".fright").mouseover(function(){
+					$(this).find("ul").show();
+					$(this).siblings().find("ul").hide();
+				})
+				$(".header_nav_all").find(".fright").mouseout(function(){
+					$(this).find("ul").hide();
+					
+				})
+				$(".pullList>li").mouseover(function(){
+					$(this).parent().next(".menu_all").show()
+					$(this).css("background-color","#333");
+					$(this).find("h3").css("color","#fff");
+					$(this).find("a").css("color","#fff");
+					$(this).find("h3").children("i").stop().animate({marginLeft:10},500);
+					$(this).find("img").eq(0).hide().end().eq(1).show()
+				})
+				$(".pullList>li").mouseout(function(){
+					$(this).parent().next(".menu_all").hide()
+					$(this).css("background-color","#e3e3e3");
+					$(this).find("h3").css("color","#333");
+					$(this).find("a").css("color","#333");
+					$(this).find("h3").children("i").stop().animate({marginLeft:0},500);
+					$(this).find("img").eq(1).hide().end().eq(0).show()
+				})
+			})
+			</script>
+		</div>
+		<div class="user">
+			<h1 class="location">
+      		您当前的位置:<a href="" target="_blank">韩都衣舍</a> &gt; <a href="" target="_blank">我的收藏</a>
+          </h1>
+          <div class="user_left">
+          	<a href=""><span>我的韩都</span></a>
+          	<div class="nav">
+		        <dl class="menu">
+		          <dt>交易管理<span class="arrow"></span></dt>
+		          <dd>
+		            <ul>
+		              <li><a href="" target="_blank">我的购物车</a></li>
+		              <li ><a href="">我的订单</a></li>
+		              <li class="last"><a href="">我的收藏</a></li>
+		            </ul>
+		          </dd>
+		        </dl>
+		        
+		        <dl class="menu">
+		          <dt>客户服务<span class="arrow"></span></dt>
+		          <dd>
+		            <ul>
+		              <li><a href="">售后服务</a></li>
+		              <li><a href="">我的评价</a></li>
+		              <li><a href="" target="_blank">建议/反馈</a></li>
+		              <li class="last"><a href="" target="_blank">在线客服</a></li>
+		            </ul>
+		          </dd>
+		        </dl>
+		        <dl class="menu">
+		          <dt>账户管理<span class="arrow"></span></dt>
+		          <dd>
+		            <ul>
+		              <li ><a href="">我的特权</a></li>
+		              <li ><a href="">我的积分</a></li>
+		              <li ><a href="">我的优惠券</a></li>
+		              <li ><a href="">我的包邮卡</a></li>
+		            </ul>
+		          </dd>
+		        </dl>
+		        <dl class="menu">
+		          <dt>个人信息<span class="arrow"></span></dt>
+		          <dd>
+		            <ul>
+		              <li ><a href="">基本资料</a></li>
+		              <li ><a href="">修改密码</a></li>
+		              <li ><a href="">地址管理</a></li>
+		              <li ><a href="">安全验证</a></li>
+		            </ul>
+		          </dd>
+		        </dl>
+		      </div>
+		      <ul class="pic">
+		      	<li><a href=""><img src="images/user/1490249444016261726.jpg"/></a></li>
+		      	<li><a href=""><img src="images/user/1486454596750237434.jpg"/></a></li>
+		      </ul>
+          </div>
+          <div class="user_right">
+          		<div class="mycollect">
+          			<h1>我的收藏夹</h1>
+          		</div>
+          		<ul class="list_bar">
+          			<li style="background: #E7E7E7;">全部宝贝</li>
+          			<li>收藏时间<em></em></li>
+          		</ul>
+          		<div class="list">
+          			<div class="list_title">
+          				<input type="checkbox" />全选<span><i></i>删除</span>
+          			</div>
+          			<div class="god_list">
+          				<!--<div>亲爱的舍友，您的收藏夹没有商品哦~去挑选宝贝吧>></div>-->
+          				<ul class="list_all">
+          					<li><a href=""><img src="images/collect/1504541273168446858.jpg"/>
+          					<div class="name"><input type="checkbox" />韩都衣舍2017秋装新款韩版女</div>
+          					<div class="price">
+          						<span class="discount">折</span ><span class="price">¥152</span><del class="oldprice">278</del>
+          					</div>
+          					<div class="icont"><a href="" class="i1"></a>| <a href="" class="i2"></a>| <a href="" class="i3"></a> 	</div>
+          					</a></li>
+          				</ul>
+          			</div>
+          		</div>
+          		<div class="page">总计 0 个记录</div>
+          
+          </div>
+		</div>
+			<div id="register_bottom">
+		<script type="text/javascript">$("#register_bottom").load("public.html .bottom");</script>
+	</div>
+	<div id="register_footer">
+		<script type="text/javascript">$("#register_footer").load("public.html .footer");</script>
+	</div>	
+	<div id="right_box">
+		<script type="text/javascript">$("#right_box").load("public.html .right_box",function(){
+			$(window).scroll(function(){
+				if($(document).scrollTop()>200){
+					$(".right_box").show();
+				}else{
+					$(".right_box").hide();
+				}
+			})
+			$(".right_box>a").mouseenter(function(){
+				$(this).css("background-position-x","-78px")
+			})
+			$(".right_box>a").mouseout(function(){
+				$(this).css("background-position-x","0")
+			})
+		});
+		</script>
+	</div>
+	</body>
+</html>

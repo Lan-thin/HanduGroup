@@ -1,0 +1,488 @@
+.main .location{
+	font-size: 12px;
+    text-indent: 5px;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+.main .location a{
+	margin:0 5px;
+}
+.main .side_bar{
+	float: left;
+    width: 175px;
+    height: auto;
+    margin-right: 15px;
+}
+.main .side_bar h1{
+	background: url(../images/cate0.png) no-repeat top center;
+    padding-bottom: 13px;
+    text-indent: -999px;
+    height: 19px;
+}
+.main .side_bar>ul{
+	margin: 5px 0;
+}
+.main .side_bar>ul li{
+	float: left;
+    width: 134px;
+    height: 27px;
+    border-top: 0;
+    text-align: left;
+    padding-left: 27px;
+    list-style: url(../images/menu_arr.png) inside;
+    font-size: 12px;
+}
+.main .side_bar ul li a:hover{
+	color: #c80a28;
+}
+.main .side_bar .share{
+	width: 170px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 30px;
+    border: solid 1px #ddd;
+}
+.main .side_bar .share>h1{
+	width: 100%;
+    height: 19px;
+    margin-bottom: 5px;
+}
+.main .side_bar .good_new h1{
+	background: url(../images/new.png) no-repeat;
+}
+.main .side_bar .good_hot h1{
+	background: url(../images/hot.png) no-repeat;
+}
+.main .side_bar .share .new_box{
+	width: 100%;
+    margin: 0px;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: dashed 1px #ddd;
+    background: #fff;
+}
+.main .side_bar .share .new_box img{
+	width: 158px;;
+}
+.main .side_bar .share .new_box ul li{
+	height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center;
+    margin:10px 20px;
+    color: #565656;
+}
+.main .side_bar .share .new_box ul li .new_price{
+	margin-right: 10px;
+	float: left;
+	color: #565656;;
+}
+.main .side_bar .share .new_box ul li .old_price{
+	text-decoration: line-through;
+	color: #999;
+	float: left;
+}
+.main .good_detail{
+	float: left;
+	width: 84%;
+	max-width: 1000px;
+	
+}
+.main .good_detail .detail_top{
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #ededed;
+}
+.main .good_detail .detail_top .detail_top_left{
+	width: 480px;
+    max-width: 480px;
+    height: auto;
+    min-height: 600px;
+    position: relative;
+    border: 1px solid #ededed;
+    float: left;
+}
+.main .good_detail .detail_top .detail_top_left .good_small{
+	width: 100%;
+    min-height: 480px;
+    height: auto;
+    position: relative;
+}
+#mask{
+	width: 290px;
+	height: 290px;
+	background: #fff;
+	position: absolute;
+	z-index: 1000;
+	opacity: .6;
+	cursor: crosshair;
+	display: none;
+	left: 0;
+	top:0;
+}
+.main .good_detail .detail_top .detail_top_left .good_small img{
+	width:480px;
+	position: absolute;
+}
+.main .good_detail .detail_top .detail_top_left ul{
+	z-index: 1000;
+    overflow: hidden;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+}
+.main .good_detail .detail_top .detail_top_left ul s{
+	margin-top: -16px;
+    margin-left: 40%;
+    display: none;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #c80a28 transparent;
+    position: relative;
+    z-index: 1;
+}
+.main .good_detail .detail_top .detail_top_left ul li{
+	float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    display: block;
+}
+.main .good_detail .detail_top .detail_top_left ul li img{
+	width: 70px;
+	height: 70px;
+}
+.main .good_detail .detail_top .detail_top_left .share{
+	 border-bottom: none;
+	 overflow: hidden;
+}
+.main .good_detail .detail_top .detail_top_left .share li{
+	  font-size: 12px;
+}
+.main .good_detail .detail_top .detail_top_left .share .like{
+	background: url(../images/like.png) no-repeat left center;
+    width: 100px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    margin: 4px 0 15px 15px;
+    text-indent: 21px;
+    float: left;
+}
+.main .good_detail .detail_top .detail_top_left .share li a{
+	display: block;
+	width: 25px;
+	height: 25px;
+	float: left;
+	line-height: 25px;
+	background: url(../images/is.png?cdnversion=20131219) no-repeat;
+}
+.main .good_detail .detail_top .detail_top_left .share li .share_to{
+	width: 60px;
+	padding-left: 25px;
+	background: url(../images/is.png?cdnversion=20131219) no-repeat 0 5px;
+}
+.main .good_detail .detail_top .detail_top_left .share li .qzone{
+	background: url(../images/is.png?cdnversion=20131219) no-repeat 0 -75px;
+}
+.main .good_detail .detail_top .detail_top_left .share li .sina{
+	background: url(../images/is.png?cdnversion=20131219) no-repeat 0 -115px;
+}
+.main .good_detail .detail_top .detail_top_left .share li .wb{
+	background: url(../images/is.png?cdnversion=20131219) no-repeat 0 -235px;
+}
+.main .good_detail .detail_top .detail_top_left .share li .ren{
+	background: url(../images/is.png?cdnversion=20131219) no-repeat 0 -195px;
+}
+.main .good_detail .detail_top .detail_top_left .share li .wy{
+	background: url(../images/is.png?cdnversion=20131219) no-repeat 0 -715px;
+}
+.main .good_detail .detail_top .detail_top_left .share li .add_share{
+    text-align: center;
+    color: rgb(69, 69, 69);
+    font-family: 宋体;
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+    background: url(../images/sc.png?cdnversion=20120720) no-repeat;
+}
+.main .good_detail .good_big{
+	width: 480px;
+	height:480px;
+	top:0;
+	left: 490px;
+	position: absolute;
+	z-index: 10;
+	overflow: hidden;
+	border:1px solid #ddd;
+}
+.main .good_detail .good_big img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.main .good_detail .detail_top .detail_top_right{
+	float: left;
+    width: 500px;
+    z-index: 10;
+    
+    /*position: absolute;
+    top:0;
+    right: 0;
+   */
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_info{
+	margin: 5px;
+    margin-left: 20px;
+    color: #838383;
+    font-size: 14px;;
+    border-bottom: 1px solid #DDD;
+    position: relative;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_info h1{
+	padding-bottom: 10px;
+    color: rgb(51, 51, 51);
+    font: bold 14px/24px 宋体;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_info ul{
+	margin-bottom: 20px;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_info li{
+	font-size: 12px;
+	margin:5px 0;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy{
+	margin: 5px;
+    margin-left: 20px;
+    color: #838383;
+    font-size: 14px;;
+    border-bottom: 1px solid #DDD;
+    position: relative;
+}
+ .main .good_detail .detail_top .detail_top_right .good_detail_buy ul{
+	/*margin-bottom: 20px;*/
+	overflow: hidden;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy ul>li{
+	margin:5px 0;
+	height: 30px;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy ul>li span{
+	color: rgb(119, 119, 119);
+    width: 70px;
+    float: left;
+    display: block;
+    position: relative;
+    font-size: 12px;
+    line-height: 30px;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy ul li .size{
+	overflow: hidden;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy ul li .size li{
+	color: #333;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #DDD;
+    width: 62px;
+    height: 25px;
+    cursor: pointer;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy ul li .size li.select{
+	color: #333;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #C80A28;
+    width: 62px;
+    cursor: pointer;
+    background: url(../images/selected.png) no-repeat right bottom;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy ul li .increase{
+	width: 12px;
+    height: 12px;
+    float: left;
+    line-height: 10px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #9A9A9A;
+    margin: 13px 0;
+    cursor: pointer;
+    
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy ul li input{
+	float: left;
+	width: 72px;
+	height:18px;
+	outline: none;
+	margin:5px 10px;
+	text-align: center;
+	line-height: 18px;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy p{
+	color: #c80a28;
+    padding: 0px 0 10px 68px;
+    font-size: 12px;
+    text-align: left;
+    overflow: hidden;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy p a{
+	width: 160px;
+    height: 43px;
+    display: block;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    float: left;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy p .buy{
+	background: url(../images/detail_buy.png) no-repeat;
+}
+.main .good_detail .detail_top .detail_top_right .good_detail_buy p .addCar{
+	background: url(../images/detail_addcart.png) no-repeat;
+}
+.main .good_detail .detail_top .detail_top_right .other_info{
+	margin-left: 20px;
+}
+.main .good_detail .detail_top .detail_top_right .other_info ul{
+	overflow: hidden;
+	width: 490px;
+	height: 30px;
+	margin-top:15px;
+}
+.main .good_detail .detail_top .detail_top_right .other_info ul li{
+	float:left;
+    height: 16px;
+    line-height: 16px;
+    color:#666;
+    font-size: 12px;
+    margin-top:5px;
+    
+}
+.main .good_detail .detail_top .detail_top_right .other_info ul li a .qq{
+	display: inline-block;
+   	margin-left: 30px;
+   	margin-right: 50px;
+    width: 13px;
+    height: 13px;
+    background: url(../images/goods_details.png) no-repeat -63px -136px;
+}
+.main .good_detail .detail_top .detail_top_right .other_info ul li .wchat{
+	display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/weixin.png) no-repeat;
+}
+.main .good_detail .detail_top .detail_top_right .other_info p{
+	color:#666;
+    font-size: 12px;
+}
+.main .good_detail .detail_top .detail_top_right .other_info p a{
+	margin-right: 10px;
+}
+.main .good_detail .detail_top .detail_top_right .other_info p span{
+	display: inline-block;
+	background: url(../images/service.png) no-repeat;
+	width: 78px;
+	height: 16px;
+}
+.main .good_detail .detail_bottom{
+	width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    height: auto;
+    overflow: hidden;
+    
+    /*border-bottom: 1px solid #ededed;*/*/
+    position: relative;
+    z-index: 99;
+    height: auto;
+    overflow: hidden;
+}
+.main .good_detail .detail_bottom .tab{
+	font-size: 14px;;
+    background-color: #f5f3f0;
+    height: 36px;
+    border: 1px solid #DDD;
+}
+.main .good_detail .detail_bottom .tab ul{
+	overflow: hidden;
+	background-color: #fff;
+    height: 34px;
+    border-bottom: 1px solid #ededed;
+}
+.main .good_detail .detail_bottom ul li{
+	float: left;
+    margin-left: -1px;
+    overflow: hidden;
+    padding: 1px 0;
+    height: 32px;
+    line-height: 32px;
+    padding:0 40px;
+    font-weight: 70;
+}
+.main .good_detail .detail_bottom ul li.click{
+	position: relative;
+    border-top: 4px solid #c80a28;
+    height: 32px;
+    margin-top: -1px;
+    z-index: 1;
+    padding: 0;
+    padding:0 40px;
+    font-weight: 70;
+    background: #f5f3f0;;
+}
+.main .good_detail .detail_bottom .tab_detail{
+	width: 750px;
+	margin:10px auto;	
+}
+.main .good_detail .detail_bottom .tab_detail img{
+	margin-bottom: 10px;
+}
+.main .good_detail .detail_bottom .tab_detail .start{
+	overflow: hidden;
+	
+}
+.main .good_detail .detail_bottom .tab_detail .start a{
+	display: block;
+	width: 250px;
+	height: 160px;
+	float: left;
+	
+}
+.main .good_detail .detail_bottom .tab_detail .start a:nth-child(1){
+	background: url(../images/details/mx.jpg) 0px 0px;
+}
+.main .good_detail .detail_bottom .tab_detail .start a:nth-child(2){
+	background: url(../images/details/mx.jpg) -250px 0px;
+}
+.main .good_detail .detail_bottom .tab_detail .start a:nth-child(3){
+	background: url(../images/details/mx.jpg) -500px 0px;
+}
+.main .good_detail .detail_bottom .tab_detail .good_images{
+	overflow: hidden;
+}
+.main .good_detail .detail_bottom .tab_detail .good_images a{
+	display: block;
+	height: 316px;
+	float: left;
+}
+
+    

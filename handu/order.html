@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/public.css" type="text/css" />
+		<link rel="stylesheet" href="style/order.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/order.js"></script>
+	</head>
+	<body>
+		<div id="global_top">
+			<script type="text/javascript">$("#global_top").load("public.html .global_nav");</script>
+		</div>
+		<div class="car_header layout">
+			 <a href=""></a>
+			 <div class="car_header_right"></div>
+		</div>
+		<div class="check_order">
+			<div class="check_order_title">填写并核对订单信息</div>
+			<ul>
+				<li>
+					<h2>收货人信息<span>[保存收货信息]</span></h2>
+					<input type="button" value="新增地址"/>
+				</li>
+				<li><h2>配送方式<span>[修改] 包邮仅限“普通快递”</span></h2></li>
+				<li><h2>支付方式<span>[修改]</span></h2>
+					<p>支付宝</p>
+				</li>
+				<li><h2>发票信息<span>[修改]</span></h2>
+					<p>不开发票</p>
+				</li>
+				<li class="goods_list"><h2>商品清单</h2>
+					<a href="">回到购物车，修改订单>></a>
+					<ul class="good_top">
+						<li>商品图片</li>
+						<li style="width: 34%;">商品名称</li>
+						<li>规格</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>小计</li>
+					</ul>
+					<h3>品牌: <span>HSTYLE女装</span></h3>
+					<ul class="goods_li">
+						<!--<li>
+							<div class="image_pic"><a href=""><img src="images/order/1042716_thumb_G_1479463430084.jpg"/></a></div>
+							<div class="goods_name">
+								<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范长袖衬衫女AA5041</a><br />
+								<a href="" style="color: #C80A28;" class="active">【全智贤秋装新品发布会】满199减20/满299减50/满399减100！</a>
+							</div>
+							<div class="goods_cs">
+								颜色:<span>蓝色</span>尺码:<span>S</span>
+							</div>
+							<div class="goods_price">
+								<del>￥294.00</del><br />
+								<span>￥118.00</span>
+							</div>
+							<div class="goods_num">
+								<span>1</span>
+							</div>
+							<div class="goods_tot">
+								<span>￥118.00</span>
+							</div>
+						</li>-->
+					</ul>
+					<p><span></span>使用优惠券抵消部分金额</p>
+					<p><span></span>使用红包：</p>
+					<p><span></span>使用包邮卡：</p>
+					<div class="message">
+						<span>订单附言:</span><textarea rows="9" cols="50" placeholder="选填，可以告诉卖家您对商品的特殊要求"></textarea>
+					</div>
+					<div class="goods_det">
+             		<table>
+			            <tr>
+			                <td class="td_fr"><span style="color:#C80A28" id="order_num"></span>件商品，商品金额：</td>
+			                <td  class="td_fr td2">￥<span id="order_totalPrice">118.00</span></td>
+			            </tr>
+			            <tr>
+			                <td class="td_fr ">满立减：</td>
+			                <td id="order_cashback" class="td_fr">-￥0.00</td>
+			            </tr>
+			            <tr>
+			                <td class="td_fr">运费：</td>
+			                <td id="order_fare" class="td_fr">￥0.00</td>
+			            </tr>
+			            <tr>
+			                <td class="td_fr ">优惠券：</td>
+			                <td id="order_youhui" class="td_fr">-￥0.00 </td>
+			            </tr> 
+			            <tr>
+			                <td class="td_fr "> 红包：</td>
+			                <td id="order_hongbao" class="td_fr">-￥0.00 </td>
+			            </tr> 
+			        	<tr>
+			                <td class="td_fr ">应付总额：</td>
+			                <td  class="td_fr">￥<span id="order_totalAmount"></span></td>
+			            </tr>
+	               </table>
+             		</div>
+				</li>
+			</ul>
+		</div>
+		<div class="submit_order">
+			<div class="order_pay">
+				<input type="submit" value="" class="submit"/>
+				<p><input type="checkbox" /><span style="color: #333;font-weight: normal;">使用韩都积分</span> -￥0.00</p>
+				<p style="color: #999;font-weight: normal">付款后退款或退货，抵现积分不予返还</p>
+				<p>您共需要为订单支付: <span style="font-size: 25px;">￥<span id="pay_money"></span></span></p>
+			</div>
+		</div>
+		<div id="global_bottom">
+			<script type="text/javascript">$("#global_bottom").load("public.html .bottom");</script>
+		</div>
+		<div id="global_footer">
+			<script type="text/javascript">$("#global_footer").load("public.html .footer");</script>
+		</div>
+		<div id="right_box">
+		<script type="text/javascript">$("#right_box").load("public.html .right_box",function(){
+			$(window).scroll(function(){
+				if($(document).scrollTop()>200){
+					$(".right_box").show();
+				}else{
+					$(".right_box").hide();
+				}
+			})
+			$(".right_box>a").mouseenter(function(){
+				$(this).css("background-position-x","-78px")
+			})
+			$(".right_box>a").mouseout(function(){
+				$(this).css("background-position-x","0")
+			})
+		});
+		</script>
+	</div>
+	</body>
+</html>

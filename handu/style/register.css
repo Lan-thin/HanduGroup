@@ -1,0 +1,274 @@
+.main{
+	overflow: hidden;
+	height: 515px;
+	padding: 30px 0 50px 80px;
+}
+.main .main_left{
+	float: left;
+	border-right: 1px #ddd dashed;
+	height: 510px;
+	padding-right: 45px;
+}
+.main .main_left .already{
+	width: 360px;
+	height: 43px;
+	line-height: 43px;
+	font-size: 13px;
+}
+.main .main_left .already .register_login{
+	width: 103px;
+    height: 29px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 29px;
+	background: url(../images/NEWS_login.png) no-repeat -347px -211px;
+	margin-left: 20px;
+}
+.main .main_left .subscibe{
+	margin-top: 30px;
+}
+.main .main_left .subscibe input{
+	border-color: #ddd;
+	height: 25px;
+	width: 250px;
+	float: left;
+}
+.main .main_left .subscibe button{
+	display: block;
+	width: 70px;
+	height: 22px;
+	border:none;
+	float: left;
+	margin:2px 8px;
+	background: url(../images/footer00.png)
+}
+.main .main_right{
+	float: left;
+	width: 660px;
+	height: 515px;
+	margin-left: 50px;
+}
+.main .main_right .register_status{
+	border-bottom: 1px #ddd dashed;
+	height:79px;
+}
+.main .main_right .register_status .num1{
+  	background: url(../images/NEWS_login.png) no-repeat 0 -326px;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 13px;
+}
+.main .main_right .register_status .choose_fs{
+	float: left;
+	line-height: 50px;
+	margin-left: 18px;
+	font-size: 12px;
+	
+}
+.main .main_right .register_status .register_fs{
+	float: left;
+	margin-top: 10px;
+}
+.main .main_right .register_status .register_fs .telephone_btn{
+	background: url(../images/NEWS_login.png) no-repeat 0 -102px;
+    width: 135px;
+    height: 38px;
+    border: none;
+    display: block;
+    line-height: 32px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+    outline: none;
+    color: #fff;
+}
+.main .main_right .register_status .register_fs .email_btn{
+	background: url(../images/NEWS_login.png) no-repeat 0 -151px;
+    width: 135px;
+    height: 38px;
+    border: none;
+    display: block;
+    line-height: 32px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+    outline: none;
+    color: #393939;
+}
+.main .main_right .register_info .phone_info{
+	overflow: hidden;
+}
+.main .main_right .register_info .phone_info .num2{
+	background: url(../images/NEWS_login.png) no-repeat 0 -326px;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 13px;
+}
+.main .main_right .register_info .phone_info .fillout_info{
+	float: left;
+	line-height: 50px;
+	margin-left: 18px;
+	font-size: 12px;;
+}
+.main .main_right .register_info .phone_info .detail_info{
+	width:570px;
+	height: 340px;
+	margin: 50px 0 0 60px;
+	font-size: 12px;
+}
+.main .main_right .register_info .phone_info .detail_info .register_list{
+	width: 115px;
+    text-align: right;
+    float: left;
+    color: #393939;
+  
+}
+.main .main_right .register_info .phone_info .detail_info li {
+	margin:10px;
+}
+.main .main_right .register_info .phone_info .detail_info li span{
+	color: #c80a28;
+	font-size: 10px;
+}
+.main .main_right .register_info .phone_info .detail_info li button {
+	background: url(../images/NEWS_login.png) no-repeat -256px -107px;
+    width: 116px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin: 3px 0 0 5px;
+    color: #7b7b7b;
+    border: none;
+}
+
+.main .main_right .register_info .phone_info .detail_info li p{
+	margin-left:40px;
+	font-size: 10px;
+}
+.main .main_right .register_info .phone_info .detail_info li a{
+	color: #c80a28;
+}
+.main .main_right .register_info .phone_info .detail_info .check{
+	margin-left: 120px;
+}
+.main .main_right .register_info .phone_info .detail_info li .info{
+	background: url(../images/shopping_login.png) no-repeat -0 -182px;
+   	width: 210px;
+    height: 33px;
+    border: none;
+    text-indent: 5px;
+    line-height: 33px;
+    outline:none ;
+}
+.main .main_right .register_info .phone_info .detail_info .add_inform{
+	background: url(../images/NEWS_login.png) no-repeat 0 -51px;
+    width: 171px;
+    height: 43px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0 0 120px;
+}
+/*手机注册*/
+.main .main_right .register_info .email_info{
+	overflow: hidden;
+	height: 420px;
+}
+.main .main_right .register_info .email_info .num2{
+	background: url(../images/NEWS_login.png) no-repeat 0 -326px;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 13px;
+}
+.main .main_right .register_info .email_info .fillout_info{
+	float: left;
+	line-height: 50px;
+	margin-left: 18px;
+	font-size: 12px;;
+}
+.main .main_right .register_info .email_info .detail_info{
+	width:570px;
+	height: 320px;
+	margin: 50px 0 0 60px;
+	font-size: 12px;
+}
+.main .main_right .register_info .email_info .detail_info .register_list{
+	width: 115px;
+	height: 30px;
+    text-align: right;
+    float: left;
+    color: #393939;
+  
+}
+.main .main_right .register_info .email_info .detail_info li {
+	margin:10px;
+	width: 580px;
+	/*height: 65px;*/
+}
+.main .main_right .register_info .email_info .detail_info li span{
+	color: #c80a28;
+	/*margin-left:10px;*/
+	display: block;
+}
+.main .main_right .register_info .email_info .detail_info li button {
+	background: url(../images/NEWS_login.png) no-repeat -256px -107px;
+    width: 116px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin: 3px 0 0 5px;
+    color: #7b7b7b;
+    border: none;
+}
+
+.main .main_right .register_info .email_info .detail_info li p{
+	margin-left:70px;
+	font-size: 10px;
+}
+.main .main_right .register_info .email_info .detail_info li .yzm{
+	
+	border-color:#ddd;
+	width:115px;
+	
+}
+.main .main_right .register_info .email_info .detail_info li a{
+	color: #c80a28;
+}
+.main .main_right .register_info .email_info .detail_info .check{
+	margin-left: 120px;
+}
+.main .main_right .register_info .email_info .detail_info li .info{
+	background: url(../images/shopping_login.png) no-repeat -0 -182px;
+   	width: 210px;
+    height: 33px;
+    border: none;
+    text-indent: 5px;
+    line-height: 33px;
+    outline:none ;
+    margin-left: 10px;
+}
+.main .main_right .register_info .email_info .detail_info .add_inform{
+	background: url(../images/NEWS_login.png) no-repeat 0 -51px;
+    width: 171px;
+    height: 43px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0 0 120px;
+}
+

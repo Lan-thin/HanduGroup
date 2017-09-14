@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/public.css" type="text/css" />
+		<link rel="stylesheet" href="style/index.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="global_top">
+			<script type="text/javascript">$("#global_top").load("public.html .global_nav");</script>
+		</div>
+		<div id="global_header">
+			<script type="text/javascript">$("#global_header").load("public.html .global_header");</script>
+		</div>
+		<div id="global_nav">
+			<script type="text/javascript">$("#global_nav").load("public.html .header_nav",function(){
+				
+					$(".pullList").show();
+			
+				
+				$(".header_nav_all").find(".fright").mouseover(function(){
+					$(this).find("ul").show();
+					$(this).siblings().find("ul").hide();
+				})
+				$(".header_nav_all").find(".fright").mouseout(function(){
+					$(this).find("ul").hide();
+					
+				})
+				$(".pullList>li").mouseover(function(){
+					$(this).parent().next(".menu_all").show()
+					$(this).css("background-color","#333");
+					$(this).find("h3").css("color","#fff");
+					$(this).find("a").css("color","#fff");
+					$(this).find("h3").children("i").stop().animate({marginLeft:10},500);
+					$(this).find("img").eq(0).hide().end().eq(1).show()
+				})
+				$(".pullList>li").mouseout(function(){
+					$(this).parent().next(".menu_all").hide()
+					$(this).css("background-color","#e3e3e3");
+					$(this).find("h3").css("color","#333");
+					$(this).find("a").css("color","#333");
+					$(this).find("h3").children("i").stop().animate({marginLeft:0},500);
+					$(this).find("img").eq(1).hide().end().eq(0).show()
+				})
+			})
+			</script>
+		</div>
+		<div class="index_banner">
+			<div class="content" style="display: block;">
+				<a href="banner.html">
+					<div style="background: url(images/index/lb1_01.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb1_02.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb1_03.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb1_04.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb1_05.jpg) no-repeat center 0px;"></div>
+				</a>
+			</div>
+			<div class="content">
+				<a href="banner.html">
+					<div style="background: url(images/index/lb_01.png) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb_02.png) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb_03.png) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb_04.png) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/lb_05.png) no-repeat center 0px;"></div>
+				</a>
+			</div>
+			<div class="content">
+				<a href="banner.html">
+					<div style="background: url(images/index/am4_01.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/am4_02.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/am4_03.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/am4_04.jpg) no-repeat center 0px;"></div>
+					<div style="background: url(images/index/am4_05.jpg) no-repeat center 0px;"></div>
+				</a>	
+			</div>
+			<ul>
+				<li class="on">全智贤新品</li>
+				<li>韩都衣舍X香奈儿</li>
+				<li>暗码大码男装</li>
+			</ul>
+		</div>
+		<div class="waring"></div>
+		<div class="hd_compy layout">
+			<div class="hd_compy_left">
+				<div class="left_top"><span></span>
+					<a href=""><img src="images/index/bt.png" alt="" />换一批</a>
+				</div>
+				<ul>
+					<li><a href=""><img src="images/index/NA.jpg"/><img src="images/index/NA-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/H-.jpg"/><img src="images/index/H-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/FQ.jpg"/><img src="images/index/FQ-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/DKN.jpg"/><img src="images/index/DKN-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/NBS.jpg"/><img src="images/index/NBS-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/YT.jpg"/><img src="images/index/YT-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/SL.jpg"/><img src="images/index/SL-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/HN-.jpg"/><img src="images/index/HN-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/ZG.jpg"/><img src="images/index/ZG-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/mn.jpg"/><img src="images/index/mn-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/pig.jpg"/><img src="images/index/pig-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/hw.jpg"/><img src="images/index/hw-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/gy.jpg"/><img src="images/index/gy-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/NA.jpg"/><img src="images/index/NA-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/H-.jpg"/><img src="images/index/H-.jpg" alt="" style="display: none;" /></a></li>
+					<li><a href=""><img src="images/index/FQ.jpg"/><img src="images/index/FQ-.jpg" alt="" style="display: none;" /></a></li>
+				</ul>
+			</div>
+			<div class="hd_compy_right">
+				<ul class="right_title"> 
+					<li class="hover">韩都动态</li>
+					<li>明星家族</li>
+					<li>媒体报道</li>
+					<li>无穷花开</li>
+				</ul>
+				<div class="right_content">
+					<div class="hd_state">
+						<div class="state_left">
+							<a href=""><img src="images/index/230_1.jpg" alt="" />
+							<span>韩都衣舍上市获批！成互联网服饰品牌第</span></a>
+							<ul>
+								<li><a href="">韩都衣舍签约亚洲女神朴信惠</a></li>
+								<li><a href="">签约朴信惠，韩都衣舍将要做什么？</a></li>
+								<li><a href="">中韩首届电商大会召开 韩都衣舍受邀</a></li>
+							</ul>
+						</div>
+						<div class="state_right">
+							<a href=""><img src="images/index/2.jpg"/>
+							<span>同心逐梦，志在巅峰</span></a>
+							<ul>
+								<li><a href="">韩都衣舍旗下男装AMH摘得双11淘品牌冠军</a></li>
+								<li><a href="">韩都衣舍多级跳 淘品牌到孵化器</a></li>
+								<li><a href="">情人节，韩都老总竟然为数百人戴戒指？</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="hd_start" style="display: none;">
+						<a href=""><img src="images//index/qq.jpg" alt="" /></a>
+						<ul>
+							<li><a href="">签约三大韩星：韩都衣舍欲书写互联网品牌的中国时尚传奇</a><span>[详细内容]</span></li>
+							<li><a href="">StarVC为韩都衣舍品牌背书</a><span>[详细内容]</span></li>
+							<li><a href="">AMH星势力计划—韩国巨星池昌旭签约发布会</a><span>[详细内容]</span></li>
+						</ul>
+					</div>
+					<div class="hd_media" style="display: none;">
+						<div class="state_left">
+							<a href=""><img src="images/index/xp.jpg" alt="" />
+							<span>韩都衣舍上市获批！成互联网服饰品牌第</span></a>
+							<ul>
+								<li><a href="">韩都衣舍签约亚洲女神朴信惠</a></li>
+								<li><a href="">签约朴信惠，韩都衣舍将要做什么？</a></li>
+								<li><a href="">中韩首届电商大会召开 韩都衣舍受邀</a></li>
+							</ul>
+						</div>
+						<div class="state_right">
+							<a href=""><img src="images/index/051.jpg"/>
+							<span>同心逐梦，志在巅峰</span></a>
+							<ul>
+								<li><a href="">韩都衣舍旗下男装AMH摘得双11淘品牌冠军</a></li>
+								<li><a href="">韩都衣舍多级跳 淘品牌到孵化器</a></li>
+								<li><a href="">情人节，韩都老总竟然为数百人戴戒指？</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="hd_flower" style="display: none;">
+						<a href=""><img src="images//index/qq.jpg" alt="" /></a>
+						<ul>
+							<li><a href="">签约三大韩星：韩都衣舍欲书写互联网品牌的中国时尚传奇</a><span>[详细内容]</span></li>
+							<li><a href="">StarVC为韩都衣舍品牌背书</a><span>[详细内容]</span></li>
+							<li><a href="">AMH星势力计划—韩国巨星池昌旭签约发布会</a><span>[详细内容]</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hd_video layout">
+			<a href=""><img src="images/index/680.png"/></a>
+			<embed src="http://cloud.video.taobao.com//play/u/263817957/p/2/e/1/t/1/50005902413.swf" allowfullscreen="true" quality="high" width="498" height="316" align="middle" allowscriptaccess="always" flashvars="uu=82abd5491f&amp;vu=7343b8c128&amp;pu=ae87902567&amp;auto_play=0&amp;width=498&amp;height=316" type="application/x-shockwave-flash" id="360videoname">
+		</div>
+		<div class="layout new_arrival">
+			<h1 class="good_type">
+				<ul style="z-index: 4;">
+					<li class="hover"><a href="">韩风女装</a>|</li>
+					<li><a href="">甜美少女</a>|</li>
+					<li><a href="">迪葵纳</a>|</li>
+					<li><a href="">韩风男装</a>|</li>
+					<li><a href="">韩风童装</a>|</li>
+				</ul>
+			</h1>
+			<div class="list_ul layout">
+				<ul style="z-index: 4;">
+					<li><a href="">
+							<img src="images/index/1504541273168446858.jpg" alt="" />
+							<p><span>¥152.00</span> <del>¥278.00</del><img src="images/banner/2.png" alt="" /></p>
+					</a></li>
+					<li><a href="">
+							<img src="images/index/1504282112403978023.jpg" alt="" />
+							<p><span>¥168.00</span> <del>¥308.00</del><img src="images/banner/2.png" alt="" /></p>
+					</a></li>
+					<li><a href="">
+							<img src="images/index/1504109125491680470.jpg" alt="" />
+							<p><span>¥108.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+					</a></li>
+					<li><a href="">
+							<img src="images/index/1503331591606817269.jpg" alt="" />
+							<p><span>¥186.00</span> <del>¥338.00</del><img src="images/banner/2.png" alt="" /></p>
+					</a></li>
+					<li><a href="">
+							<img src="images/index/1502727750932932007.jpg" alt="" />
+							<p><span>¥122.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+					</a></li>
+			</ul>
+			<ul style="z-index: 2;">
+				<li><a href="">
+						<img src="images/index/1503951036254831633.jpg" alt="" />
+						<p><span>¥148.00</span> <del>¥238.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503432703834074916.jpg" alt="" />
+						<p><span>¥128.00</span> <del>¥198.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503432660825646787.jpg" alt="" />
+						<p><span>¥158.00</span> <del>¥238.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503432658238560835.jpg" alt="" />
+						<p><span>¥106.00</span> <del>¥168.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503432625988066285.jpg" alt="" />
+						<p><span>¥132.00</span> <del>¥208.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+			<ul style="z-index: 2;">
+				<li><a href="">
+						<img src="images/index/1503863615870766798.jpg" alt="" />
+						<p><span>¥109.00</span> <del>¥159.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503863583505738257.jpg" alt="" />
+						<p><span>¥129.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503431593532553182.jpg" alt="" />
+						<p><span>¥119.00</span> <del>¥189.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503431590664659130.jpg" alt="" />
+						<p><span>¥99.00</span> <del>¥138.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1503431529625636896.jpg" />
+						<p><span>¥99.00</span> <del>¥309.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+			<ul style="z-index: 2;">
+				<li><a href="">
+						<img src="images/index/1481148183717974837.jpg" alt="" />
+						<p><span>¥128.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1504562439828610649.jpg" alt="" />
+						<p><span>¥238.00</span> <del>¥238.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1500760823446094408.jpg" alt="" />
+						<p><span>¥138.00</span> <del>¥248.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1500760816362637657.jpg" alt="" />
+						<p><span>¥118.00</span> <del>¥198.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1481148108654144254.jpg" alt="" />
+						<p><span>¥92.00</span> <del>¥168.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+			<ul style="z-index: 2;">
+				<li><a href="">
+						<img src="images/index/1501518112376693620.jpg" alt="" />
+						<p><span>¥139.00</span> <del>¥208.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1501518098092599743.jpg" alt="" />
+						<p><span>¥129.00</span> <del>¥198.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1501086104183497432.jpg" alt="" />
+						<p><span>¥119.00</span> <del>¥228.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1500999634705480168.jpg" alt="" />
+						<p><span>¥149.00</span> <del>¥228.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1061725_thumb_G_1504664873841.jpg" alt="" />
+						<p><span>¥239.00</span> <del>¥368.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+			</div>	
+		</div>
+		<div class="layout common" id="fashion">
+			<h1 class="layout">
+				<ul>
+					<li><a href="" style="text-decoration: underline;">2107秋装新品</a></li>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">针织衫</a></li>
+					<li><a href="">卫衣</a></li>
+					<li><a href="">短外套</a></li>
+					<li><a href="">T恤</a></li>
+					<li><a href="">裤装</a></li>
+					<li><a href="">更多></a></li>
+				</ul>		
+			</h1>
+			<div class="common_mid">
+				<div class="nav_bar">
+					<a href="" class="n_img">
+						<img src="images/index/1503997128211718701.jpg" alt="" />
+						<span>连衣裙专区</span>
+					</a>
+					<div class="n_list">
+						<ul>
+							<li><a href="">裙装</a></li>
+							<li><a href="">连衣裙</a></li>
+							<li><a href="">毛针织衫</a></li>
+							<li><a href="">牛仔裤</a></li>
+							<li><a href="">卫衣/绒衫</a></li>
+							<li><a href="">短外套/休闲套装</a></li>
+							<li><a href="">T恤</a></li>
+							<li><a href="">休闲裤</a></li>
+						</ul>	
+					</div>
+				</div>
+				<div class="float_right">
+					<div class="left_img">
+						<a href=""><img src="images/index/1502170168302289613.jpg"/></a>
+					</div>
+					<div class="right_img">
+						<a href="">
+							<img src="images/index/1503997163623460286.jpg" alt="" />
+						</a>
+						<a href=""><img src="images/index/1503997213413920672.jpg" alt="" /></a>
+					</div>
+					<div class="right_hot">
+						<h1>热销排行榜</h1>
+						<ul>
+							<li style="border:none;">
+								<h2 style="background: url(images/index/01.png) no-repeat;display: none;">2017韩版女装春装新款</h2>
+								<ul style="display:block;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>1</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2 style="background: url(images/index/02.png) no-repeat;display: block;">2017韩版女装春装新款</h2>
+								<ul style="display: none;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>2</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2 style="background: url(images/index/03.png) no-repeat;display: block;">2017韩版女装春装新款</h2>
+								<ul style="display: none;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>3</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2 style="background: url(images/index/04.png) no-repeat;display: block;">2017韩版女装春装新款</h2>
+								<ul style="display: none;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>4</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2 style="background: url(images/index/05.png) no-repeat;display: block;">2017韩版女装春装新款</h2>
+								<ul style="display: none;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>5</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2 style="background: url(images/index/06.png) no-repeat;display: block;">2017韩版女装春装新款</h2>
+								<ul style="display: none;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>6</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2 style="background: url(images/index/07.png) no-repeat;display: block;">2017韩版女装春装新款</h2>
+								<ul style="display: none;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>7</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>
+							<li >
+								<h2 style="background: url(images/index/08.png) no-repeat;display: block;">2017韩版女装春装新款</h2>
+								<ul style="display: none;">
+									<li class="li_left"><a href=""><img src="images/index/1493276953734767876.jpg"/><span>8</span></a></li>
+									<li class="li_right">
+										<p>2017韩版女装春装新款</p>
+										<p style="color:#c80a28; font-size: 16px;font-weight: bold;">¥126.00</p>
+										<del style="color: #999;">¥248.00</del>
+										<p>已售出<span style="color:#c80a28;">6619</span>笔</p>
+									</li>
+								</ul>
+							</li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+			<ul class="layout">
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>	
+			</ul>
+		</div>
+		<!--下一层-->
+		<div class="layout common" id="mom">
+			<h1 class="layout">
+				<ul>
+					<li><a href="" style="color: #C80A28;">2107夏装装新品</a></li>
+					<li><a href="">T恤</a></li>
+					<li><a href="">毛针织衫</a></li>
+					<li><a href="">套装</a></li>
+					<li><a href="">裙装</a></li>
+					<li><a href="">裤装</a></li>
+					<li><a href="">更多></a></li>
+				</ul>		
+			</h1>
+			<div class="common_mid">
+				<div class="nav_bar">
+					<a href="" class="n_img">
+						<img src="images/index/1503997541891848581.png" alt="" />
+						<span>连衣裙专区</span>
+					</a>
+					<div class="n_list">
+						<ul>
+							<li><a href="">T恤</a></li>
+							<li><a href="">衬衫</a></li>
+							<li><a href="">裤装</a></li>
+							<li><a href="">裙装</a></li>
+							<li><a href="">短外套</a></li>
+							<li><a href="">毛针织衫</a></li>
+							<li><a href="">套装</a></li>
+							<li><a href="">风衣</a></li>	
+						</ul>	
+					</div>
+				</div>
+				<div class="float_right">
+					<div class="left_img">
+						<a href=""><img src="images/index/1504063652687846219.jpg"/></a>
+					</div>
+					<div class="right_img">
+						<a href="">
+							<img src="images/index/1503997358699198092.png" alt="" />
+						</a>
+						<a href=""><img src="images/index/1503997399906040366.png" alt="" /></a>
+					</div>
+					
+				</div>
+			</div>
+			<ul class="layout">
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+		</div>
+		<div class="layout common" id="girl">
+			<h1 class="layout">
+				<ul>
+					<li><a href="">衬衫</a></li>
+					<li><a href="">套装</a></li>
+					<li><a href="">裙装</a></li>
+					<li><a href="">裤装</a></li>
+					<li><a href="" style="color: #C80A28;">T恤</a></li>
+					<li><a href="">更多></a></li>
+				</ul>		
+			</h1>
+			<div class="common_mid">
+				<div class="nav_bar">
+					<a href="" class="n_img">
+						<img src="images/index/1503997726594332397.png" alt="" />
+						<span>新品主义</span>
+					</a>
+					<div class="n_list">
+						<ul>
+							<li><a href="">T恤</a></li>
+							<li><a href="">衬衫</a></li>
+							<li><a href="">裤装</a></li>
+							<li><a href="">裙装</a></li>
+							<li><a href="">短外套</a></li>
+							<li><a href="">毛针织衫</a></li>
+							<li><a href="">套装</a></li>
+							<li><a href="">风衣</a></li>	
+						</ul>	
+					</div>
+				</div>
+				<div class="float_right">
+					<div class="left_img">
+						<a href=""><img src="images/index/1504063606375527008.jpg"/></a>
+					</div>
+					<div class="right_img">
+						<a href="">
+							<img src="images/index/1503997801541319636.jpg" alt="" />
+						</a>
+						<a href=""><img src="images/index/1503997820605892198.png" alt="" /></a>
+						<a href=""><img src="images/index/1503997833870065285.jpg" alt="" /></a>
+					</div>
+					
+				</div>
+			</div>
+			<ul class="layout">
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+		</div>
+		<div class="layout common" id="child">
+			<h1 class="layout">
+				<ul>
+					<li><a href="">婴幼童</a></li>
+					<li><a href="">T恤</a></li>
+					<li><a href="">衬衫</a></li>
+					<li><a href="">套装</a></li>
+					<li><a href="">裙装</a></li>
+					<li><a href="">卫衣/绒衫</a></li>
+					<li><a href="">裤装</a></li>
+					<li><a href="">更多></a></li>
+				</ul>		
+			</h1>
+			<div class="common_mid">
+				<div class="nav_bar">
+					<a href="" class="n_img">
+						<img src="images/index/1503997878607791892.png" alt="" />
+						<span>连衣裙专区</span>
+					</a>
+					<div class="n_list">
+						<ul>
+							<li><a href="">卫衣/绒衫</a></li>
+							<li><a href="">牛仔裤</a></li>
+							<li><a href="">套装</a></li>
+							<li><a href="">衬衫</a></li>
+							<li><a href="">外套/夹克/大衣</a></li>
+							<li><a href="">T恤</a></li>
+							<li><a href="">连衣裙</a></li>
+							<li><a href="">毛衣/针织衫</a></li>
+							<li><a href="">打底裤</a></li>
+							<li><a href="">半身裙</a></li>
+							<li><a href="">休闲裤</a></li>
+							<li><a href="">马甲</a></li>	
+						</ul>	
+					</div>
+				</div>
+				<div class="float_right">
+					<div class="left_img">
+						<a href=""><img src="images/index/1504063639191420399.jpg"/></a>
+					</div>
+					<div class="right_img">
+						<a href="">
+							<img src="images/index/1503997975843353491.png" alt="" />
+						</a>
+						<a href=""><img src="images/index/1503997995727572221.png" alt="" /></a>
+					</div>
+					
+				</div>
+			</div>
+			<ul class="layout">
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+		</div>
+		<div class="layout common" id="nbs">
+			<h1 class="layout">
+				<ul>
+					<li><a href="">T恤</a></li>
+					<li><a href="">衬衫</a></li>
+					<li><a href="">蕾丝雪纺</a></li>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">裤装</a></li>
+					<li><a href="">更多></a></li>
+				</ul>		
+			</h1>
+			<div class="common_mid">
+				<div class="nav_bar">
+					<a href="" class="n_img">
+						<img src="images/index/1503998209836603598.png" alt="" />
+						<span>连衣裙专区</span>
+					</a>
+					<div class="n_list">
+						<ul>
+							<li><a href="">毛衣/针织衫</a></li>
+							<li><a href="">连衣裙</a></li>
+							<li><a href="">卫衣/绒衫</a></li>
+							<li><a href="">休闲裤</a></li>
+							<li><a href="">T恤</a></li>
+							<li><a href="">衬衫</a></li>
+							<li><a href="">蕾丝衫/雪纺衫</a></li>
+							<li><a href="">休闲外套</a></li>	
+						</ul>	
+					</div>
+				</div>
+				<div class="float_right">
+					<div class="left_img">
+						<a href=""><img src="images/index/1504063595651094366.jpg"/></a>
+					</div>
+					<div class="right_img">
+						<a href="">
+							<img src="images/index/1503998144894280297.png" alt="" />
+						</a>
+					</div>
+					
+				</div>
+			</div>
+			<ul class="layout">
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+				<li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li><li><a href="">
+						<img src="images/index/1501085120070022582.jpg" alt="" />
+						<p><span>¥125.00</span> <del>¥218.00</del><img src="images/banner/2.png" alt="" /></p>
+				</a></li>
+			</ul>
+		</div>
+		<div class="collection layout">
+			<a href=""><img src="images/index/1504057308666403646.jpg"/></a>
+		</div>
+		<div class="hd_news layout">
+			<a href="" class="news_top layout">
+				<span>更多></span>
+			</a>
+			<div class="news_left">
+				<a href=""><img src="images/index/1469676232889773651.jpg"/>
+				<p>
+					【韩都公益】无穷花开
+				</p></a>
+			</div>
+			<div class="new_mid">
+				<h3></h3>
+				<ul class="mid_top">
+					<li>
+						<h3><a href="">在韩国首创时尚大赛，韩都衣舍又创新纪录</a></h3>
+						<p>8月12日，韩都衣舍2016韩国时尚设计师大赛成功举办，在到场的200多位重量级嘉宾及中韩两国媒体见证下，一系列战略合作协议达成，多家韩国企业开启了与韩都衣舍的热恋期，韩都衣舍以一己之力再次搅动韩国，成为了中国电商崛起的新标杆。</p>
+					</li>
+					<li>
+						<h3><a href="">在韩国首创时尚大赛，韩都衣舍又创新纪录</a></h3>
+						<p>8月12日，韩都衣舍2016韩国时尚设计师大赛成功举办，在到场的200多位重量级嘉宾及中韩两国媒体见证下，一系列战略合作协议达成，多家韩国企业开启了与韩都衣舍的热恋期，韩都衣舍以一己之力再次搅动韩国，成为了中国电商崛起的新标杆。</p>
+					</li>
+					<a href=""><img src="images/index/1410508721545137834.jpg"/></a>
+				</ul>
+				<ul class="mid_bot">
+					<li><a href="">韩都衣舍携手J-ONE PARTNERS，演绎中韩潮流新风尚</a></li>
+					<li><a href="">韩都衣舍搭手韩国户外第一品牌 打通电商全产业链</a></li>
+				</ul>
+			</div>
+			<div class="news_right">
+				<div class="dy">
+					<form action="">
+						<input type="text" />
+						<button></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="global_bottom">
+			<script type="text/javascript">$("#global_bottom").load("public.html .bottom");</script>
+		</div>
+		<div id="global_footer">
+			<script type="text/javascript">$("#global_footer").load("public.html .footer");</script>
+		</div>
+		<div id="right_box">
+		<script type="text/javascript">$("#right_box").load("public.html .right_box",function(){
+			$(window).scroll(function(){
+				if($(document).scrollTop()>200){
+					$(".right_box").show();
+				}else{
+					$(".right_box").hide();
+				}
+			})
+			$(".right_box>a").mouseenter(function(){
+				$(this).css("background-position-x","-78px")
+			})
+			$(".right_box>a").mouseout(function(){
+				$(this).css("background-position-x","0")
+			})
+		});
+		</script>
+		</div>
+		<div class="top">
+			<div class="layout">
+				<div class="top_logo">
+					<img src="images/index/slogo.png"/>
+				</div>
+				<div class="top_search">
+					<form action="">
+						<input type="text" class="search_txt"/>
+						<input type="submit"  value="搜索" class="search_btn"/>
+					</form>
+				</div>
+				<div class="top_title">
+					没空去韩国？就来韩都衣舍！
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

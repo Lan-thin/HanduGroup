@@ -1,0 +1,346 @@
+.car_header {
+  overflow: hidden;
+  margin: 30px auto 10px;
+}
+.car_header > a {
+  display: block;
+  width: 414px;
+  height: 44px;
+  float: left;
+  background: url(../images/shopcar/cart_img.png) no-repeat -15px -17px;
+}
+.car_header .car_header_right {
+  margin: 15px 2px 0;
+  width: 700px;
+  height: 31px;
+  float: right;
+  background: url(../images/shopcar/cart_img.png) no-repeat -18px -89px;
+}
+.shop_car {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.shop_car > a {
+  display: block;
+  background: url(../images/shopcar/cart_img.png) no-repeat;
+  cursor: pointer;
+  position: absolute;
+}
+.shop_car > a.continue {
+  width: 119px;
+  height: 36px;
+  background-position: -16px -747px;
+  left: 0;
+  bottom: 0;
+}
+.shop_car > a.account {
+  width: 157px;
+  height: 36px;
+  background-position: -16px -361px;
+  right: 0;
+  bottom: 0;
+}
+.shop_car .shop_car_title {
+  width: 429px;
+  height: 28px;
+  font-size: 12px;
+  background: url(../images/shopcar/warm.png) no-repeat;
+  line-height: 25px;
+}
+.shop_car .shop_car_title span {
+  color: #fe0032;
+}
+.shop_car .car_top {
+  height: 36px;
+  line-height: 36px;
+  margin-top: 3px;
+  overflow: hidden;
+  background: url(../images/shopcar/cartbar2.png) no-repeat;
+}
+.shop_car .car_top .car_common {
+  float: left;
+  text-align: center;
+  font-size: 13px;
+}
+.shop_car .car_list {
+  width: 1198px;
+  float: left;
+  min-height: 45px;
+  height: auto;
+  line-height: 26px;
+  border: 1px #ddd solid;
+  border-top: none;
+  position: relative;
+}
+.shop_car .car_list .car_none {
+  width: 502px;
+  height: 108px;
+  float: none;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.shop_car .car_list .car_none img {
+  float: left;
+}
+.shop_car .car_list .car_none p {
+  font-size: 18px;
+  color: #333;
+  float: left;
+  margin: 25px 0 0 20px;
+}
+.shop_car .car_list .car_none span {
+  float: left;
+  margin-left: 20px;
+}
+.shop_car .car_list .car_none span a {
+  color: #c80a28;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.shop_car .car_list .car_goods {
+  height: auto;
+  border-bottom: #eaeaea 1px solid;
+  overflow: hidden;
+}
+.shop_car .car_list .car_goods li {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.shop_car .car_list .car_goods li h3 {
+  height: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+  line-height: 20px;
+}
+.shop_car .car_list .car_goods li .car_good {
+  background: #fcfcfc;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.shop_car .car_list .car_goods li .car_good > li {
+  display: block;
+  font-size: 12px;
+  background: url(../images/shopcar/shopping_car_bg.png) no-repeat right;
+  float: left;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_detail {
+  width: 367px;
+  height: auto;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  text-align: left;
+  overflow: hidden;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_detail > a {
+  display: block;
+  width: 112px;
+  height: 112px;
+  float: left;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_detail > a img {
+  width: 112px;
+  height: 112px;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_detail .car_good_name {
+  margin: 20px 0 0 10px;
+  float: left;
+  width: 243px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_detail .car_good_name > a {
+  color: #565656;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_detail .car_good_name > a:hover {
+  text-decoration: underline;
+  color: #C80A28;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_price {
+  width: 132px;
+  height: 132px;
+  text-align: center;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_price > div {
+  padding: 40px 0;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_price > div del {
+  color: #999;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_price > div span {
+  font-size: 14px;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_number {
+  width: 132px;
+  height: 132px;
+  text-align: center;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_number span {
+  border: 1px solid #a7a6ab;
+  width: 12px;
+  height: 12px;
+  float: left;
+  line-height: 12px;
+  text-align: center;
+  margin: 7px 0;
+  cursor: pointer;
+  margin: 55px 10px 0 20px;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_number input {
+  width: 36px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 3px;
+  text-align: center;
+  border: 1px solid #ccc;
+  color: #444;
+  float: left;
+  margin: 50px 0;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_money {
+  width: 122px;
+  font-size: 14px;
+  color: #bf0000;
+  line-height: 132px;
+  text-align: center;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_del {
+  width: 132px;
+  height: 132px;
+  font-size: 12px;
+  text-align: center;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_del .del_middle {
+  margin: 50px 0;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_del .del_middle a {
+  color: #565656;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_other {
+  width: 184px;
+  height: 132px;
+  background: 0;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_other a {
+  display: block;
+  margin: 40px 10px 0 10px;
+  color: #C80A28;
+}
+.shop_car .car_list .car_goods li .car_good > li.car_good_other a:hover {
+  text-decoration: underline;
+}
+.shop_car .car_list .car_bottom {
+  width: 1196px;
+  min-height: 45px;
+  height: auto;
+  line-height: 26px;
+  border: solid 1px #ddd;
+  border-top: none;
+  overflow: hidden;
+}
+.shop_car .car_list .car_bottom .car_bottom_right {
+  float: right;
+  width: 200px;
+  height: auto;
+  margin: 10px 10px 0 0;
+}
+.shop_car .car_list .car_bottom .car_bottom_right table {
+  font-size: 12px;
+}
+.shop_car .car_list .car_bottom .car_bottom_right table tr {
+  vertical-align: inherit;
+}
+.shop_car .car_list .car_bottom .car_bottom_right table tr td {
+  text-align: right;
+}
+.shop_car .car_list .car_bottom .car_bottom_right table tr td.td_totle {
+  width: 60px;
+}
+.shop_car .car_list .car_bottom .car_bottom_right table tr td.td_price {
+  width: 80px;
+}
+.shop_car .car_list .car_totle {
+  width: 1196px;
+  min-height: 74px;
+  height: auto;
+  line-height: 26px;
+  border: solid 1px #ddd;
+  border-top: none;
+  background: #fdfdfd;
+  text-align: right;
+  line-height: 45px;
+  font-size: 14px;
+}
+.shop_car .car_list .car_totle span {
+  font: 22px/30px 'Microsoft YaHei';
+  color: #bf0000;
+}
+.car_recommend {
+  height: auto;
+  border-top: 1px #ddd solid;
+  margin: 30px auto;
+}
+.car_recommend .recommend_tab {
+  width: 100%;
+  height: 35px;
+  margin-top: 30px;
+  background: #d8d7d7;
+  text-indent: 15px;
+  font-size: 16px;
+  line-height: 35px;
+  position: relative;
+}
+.car_recommend .recommend_tab span {
+  float: right;
+  margin-top: 4px;
+}
+.car_recommend .recommend_tab span a {
+  float: left;
+  display: block;
+  width: 140px;
+  height: 26px;
+  background: #8a8a8a;
+  color: #FFF;
+  text-align: center;
+  text-indent: 0;
+  font-size: 14px;
+  line-height: 26px;
+}
+.car_recommend .recommend_tab span a.current {
+  background: #FFF;
+  color: #8a8a8a;
+}
+.car_recommend .recommend_all {
+  position: relative;
+  padding: 10px 40px;
+  width: 1118px;
+  border: 1px solid #DDD;
+}
+.car_recommend .recommend_all ul {
+  overflow: hidden;
+}
+.car_recommend .recommend_all ul li {
+  float: left;
+  display: block;
+  width: 180px;
+  margin: 10px 0;
+  margin-right: 7px;
+}
+.car_recommend .recommend_all ul li img {
+  width: 100%;
+}
+.car_recommend .recommend_all ul li p {
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 22px;
+  font-size: 12px;
+}
+.car_recommend .recommend_all ul li span {
+  color: #ca0a2a;
+  font-size: 14px;
+  line-height: 20px;
+}

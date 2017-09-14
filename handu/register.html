@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/public.css" type="text/css" />
+		<link rel="stylesheet" href="style/register.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/register.js"></script>
+		
+		
+	</head>
+	<body>
+		<div id="global_nav">   
+			<script type="text/javascript">$("#global_nav").load("public.html .global_nav");</script>
+		</div>
+		<div id="global_header">
+			<script type="text/javascript">$("#global_header").load("public.html .global_header");</script>
+		</div>
+		<div id="header_nav">
+			<script type="text/javascript">$("#header_nav").load("public.html .header_nav",function(){
+				$(".nav_all").mouseover(function(){
+					$(".pullList").show();
+				})
+				$(".nav_all").mouseout(function(){
+					$(".pullList").hide();
+				})
+				$(".header_nav_all").find(".fright").mouseover(function(){
+					$(this).find("ul").show();
+					$(this).siblings().find("ul").hide();
+				})
+				$(".header_nav_all").find(".fright").mouseout(function(){
+					$(this).find("ul").hide();
+					
+				})
+				$(".pullList>li").mouseover(function(){
+					$(this).parent().next(".menu_all").show()
+					$(this).css("background-color","#333");
+					$(this).find("h3").css("color","#fff");
+					$(this).find("a").css("color","#fff");
+					$(this).find("h3").children("i").stop().animate({marginLeft:10},500);
+					$(this).find("img").eq(0).hide().end().eq(1).show()
+				})
+				$(".pullList>li").mouseout(function(){
+					$(this).parent().next(".menu_all").hide()
+					$(this).css("background-color","#e3e3e3");
+					$(this).find("h3").css("color","#333");
+					$(this).find("a").css("color","#333");
+					$(this).find("h3").children("i").stop().animate({marginLeft:0},500);
+					$(this).find("img").eq(1).hide().end().eq(0).show()
+				})
+			})
+			</script>
+	</div>	
+	<div class="banner">
+		<img src="images/banner1.jpg" alt="" />
+	</div>	
+	<div class="main layout">
+		<div class="main_left">
+			<div class="already">已经是韩都衣舍客户 :
+			<input type="button" value="直接登录" class="register_login"></div>
+			<img src="images/367-250.png" alt="" />
+			<div class="subscibe">
+				<input type="text" name="">
+				<button></button>
+			</div>
+		</div>
+		<div class="main_right">
+			<div class="register_status">
+				<div class="num1">1</div>
+				<div class="choose_fs">选择注册方式：</div>
+				<div class="register_fs">
+					<button class="telephone_btn" style="outline:none;">使用手机注册</button>
+					<button class="email_btn" style="outline:none;">使用邮箱注册</button>
+				</div>
+			</div>
+			<div class="register_info" >
+				<div class="phone_info" style="display:block;" >
+					<div class="num2">2</div>
+					<div class="fillout_info">填写你的信息：</div>
+					<div class="detail_info">
+						<form id="phone_register" action="" method="post">
+						<ul>
+							<li>
+								<div class="register_list">您的手机号：</div><input type="text" class="info"  id="phoneNum"><button>发送验证码</button><span id="phone_num"></span>
+								<p>请输入您在注册时使用的手机号码,若当前号码不用/丢失，或无法收到验证码?<a href="">其他验证方式</a></p>
+							</li>
+							<li><div class="register_list">验证码：</div><input type="text" class="info" placeholder="手机发送验证码没做，可不填"></li>
+							<li><div class="register_list">密码：</div><input type="password" class="info" id="phonePwd"><span id="phone_password"></span><p>6-16位字符，可使用字母、数字或符号的组合</p></li>
+							<li><div class="register_list">确认密码：</div><input type="password" class="info" id="phonecpwd"><span id="phone_pwd"></span></li>
+							<li><input type="checkbox" name="" class="check">我已看过并接受<a href="">《用户协议》</a></li>
+						</ul>
+						<input type="button" value="同意协议并注册" class="add_inform"/>
+					</form>
+					</div>
+					
+				</div>
+				<div class="email_info" style="display: none;">
+					<div class="num2">2</div>
+					<div class="fillout_info">填写你的信息：</div>
+					<div class="detail_info">
+						<form>
+						<ul>
+							<li>
+								<div class="register_list">Email：</div><input type="text" class="info"><span id="email"></span>
+									<p>Email地址作为用户名，同时也用于接收账户信息、订单通知及密码找回等功能</p>
+							</li>
+							<li><div class="register_list">密码：</div><input type="password" class="info"><span accesskey="email_password"></span>
+									<p>8-24位字符，必须包含字母、数字的组合</p>
+							</li>
+							<li><div class="register_list">确认密码：</div><input type="password" class="info"><span accesskey="email_pwd"></span>
+									<p>请再次输入密码，两次输入必须一致</p>
+							</li>
+							<li> <div class="register_list">验证码：</div><input type="text" class="yzm"/></li>
+							<li><input type="checkbox" name="" class="check">我已看过并接受<a href="">《用户协议》</a></li>
+						</ul>
+						<input type="submit" value="同意协议并注册" class="add_inform"/>
+					</form>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="register_bottom">
+		<script type="text/javascript">$("#register_bottom").load("public.html .bottom");</script>
+	</div>
+	<div id="register_footer">
+		<script type="text/javascript">$("#register_footer").load("public.html .footer");</script>
+	</div>	
+	<div id="right_box">
+		<script type="text/javascript">$("#right_box").load("public.html .right_box",function(){
+			$(window).scroll(function(){
+				if($(document).scrollTop()>200){
+					$(".right_box").show();
+				}else{
+					$(".right_box").hide();
+				}
+			})
+			$(".right_box>a").mouseenter(function(){
+				$(this).css("background-position-x","-78px")
+			})
+			$(".right_box>a").mouseout(function(){
+				$(this).css("background-position-x","0")
+			})
+		});
+		</script>
+	</div>
+	</body>
+</html>
+<script>
+	$(".telephone_btn").click(function(){
+		$(".phone_info").show();
+		$(".email_info").hide();
+		$(this).css({"background-position": "0 -102px","color":"#FFF"});
+		$(".email_btn").css({"background-position": "0 -151px","color":"#393939"});
+	})
+	$(".email_btn").click(function(){
+		$(".phone_info").hide();
+		$(".email_info").show();
+		$(this).css({"background-position": "0 -102px","color":"#FFF"});
+		$(".telephone_btn").css({"background-position": "0 -151px","color":"#393939"});
+	})
+</script>

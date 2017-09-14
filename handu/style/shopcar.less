@@ -1,0 +1,354 @@
+.car_header{
+    overflow: hidden;
+    margin: 30px auto 10px;
+    >a{
+        display: block;
+        width: 414px;
+        height: 44px;
+        float: left;
+        background: url(../images/shopcar/cart_img.png) no-repeat -15px -17px;
+    }
+    .car_header_right{
+        margin: 15px 2px 0;
+        width: 700px;
+        height: 31px;
+        float: right;
+        background: url(../images/shopcar/cart_img.png) no-repeat -18px -89px;
+    }
+}
+.shop_car{
+    height: auto;
+    overflow: hidden;
+    position:relative;
+     >a{
+            display: block;
+            background: url(../images/shopcar/cart_img.png) no-repeat;
+            cursor: pointer;
+            position:absolute;
+            &.continue{
+                width: 119px;
+                height: 36px;
+                background-position: -16px -747px;
+                left: 0;
+                bottom: 0;
+            }
+            &.account{
+                width: 157px;
+                height: 36px;
+                background-position: -16px -361px;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    .shop_car_title{
+        width: 429px;
+        height: 28px;
+        font-size: 12px;
+        background: url(../images/shopcar/warm.png) no-repeat ;
+        line-height: 25px;
+        span{
+            color: #fe0032;
+        }
+    }
+    .car_top{
+        height: 36px;
+        line-height: 36px;
+        margin-top: 3px;
+        overflow: hidden;
+        background: url(../images/shopcar/cartbar2.png) no-repeat;
+        .car_common{
+            float: left;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    .car_list{
+            width: 1198px;
+            float: left;
+            min-height: 45px;
+            height: auto;
+            line-height: 26px;
+            border: 1px #ddd solid;
+            border-top: none;
+            position: relative;
+        .car_none{
+            width: 502px;
+            height: 108px;
+            float: none;
+            margin: 20px auto;
+            overflow: hidden;
+            img{
+                float: left;
+            }
+            p{
+                font-size: 18px;
+                color:#333;
+                float: left;
+                margin: 25px 0 0 20px;
+            }
+            span{
+                float: left;
+                margin-left: 20px;
+                a{
+                    color: #c80a28;
+                    font-size: 14px;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .car_goods{
+            height: auto;
+            border-bottom: #eaeaea 1px solid;
+            overflow: hidden;
+            li{
+                display: block;
+                width: 100%;
+                height: auto;
+               
+                h3{
+                height: 20px;
+                padding-top: 20px;
+                font-size: 14px;
+                font-weight: 500;
+                margin-left: 20px;
+                line-height: 20px; 
+//              background: #fff;    
+                }
+                .car_good{
+                    background: #fcfcfc;
+                    overflow: hidden;
+                    margin-top: 15px;
+                    >li{
+                        display: block;
+                        font-size: 12px;
+                        background: url(../images/shopcar/shopping_car_bg.png) no-repeat right;
+                        float: left;
+                        &.car_good_detail{
+                            width: 367px;
+                            height: auto;
+                            margin-left: 15px;
+                            padding-bottom: 10px;
+                            text-align: left;
+                            overflow: hidden;
+                            >a{
+                                display: block;
+                                width: 112px;
+                                height: 112px;
+                                float: left;
+                                
+                                img{
+                                    width: 112px;
+                                    height: 112px;
+                                }
+                            }
+                            .car_good_name{
+                                    margin: 20px 0 0 10px;
+                                    float: left;
+//                                  display: inline;
+                                    width: 243px;
+                                    overflow: hidden;
+                                    font-size: 14px;
+                                    >a{
+                                        color: #565656;
+                                         &:hover{
+                                            text-decoration: underline;
+                                            color: #C80A28;
+                                         }
+                                    }
+                            }
+                        }
+                        &.car_good_price{
+                            width: 132px;
+                            height: 132px;
+                            text-align: center;
+                            >div{
+                                padding: 40px 0; 
+                                del{
+                                    color: #999;
+                                }     
+                                span{
+                                    font-size: 14px;
+                                }      
+                            }
+                        }
+                        &.car_good_number{
+                            width: 132px;
+                            height: 132px;
+                            text-align: center;
+                            span{
+                                border:1px solid #a7a6ab;
+                                width: 12px;
+                                height: 12px;
+                                float: left;
+                                line-height: 12px;
+                                text-align: center;
+                                margin:7px 0;
+                                cursor: pointer;
+                                margin: 55px 10px 0 20px;
+                            }
+                            input{
+                                    width: 36px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    margin-top: 3px;
+                                    text-align: center;
+                                    border: 1px solid #ccc;
+                                    color: #444;
+                                    float: left;
+                                    margin: 50px 0;
+                            }
+                        }
+                        &.car_good_money{
+                            width: 122px;
+                            font-size: 14px;
+                            color: #bf0000;
+                            line-height: 132px;
+                            text-align: center;
+                        }
+                        &.car_good_del{
+                            width: 132px;
+                            height: 132px;
+                            font-size: 12px;
+                            text-align: center;
+                            .del_middle{
+                                margin:50px 0;
+                                a{
+                                    color: #565656;
+                                }        
+                            }
+                        }
+                        &.car_good_other{
+                            width: 184px;
+                            height: 132px;
+                            background: 0;
+                            a{
+                                display: block;
+                                margin: 40px 10px 0 10px;
+                                color: #C80A28;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+        .car_bottom{
+            width: 1196px;
+            min-height: 45px;
+            height: auto;
+            line-height: 26px;
+            border: solid 1px #ddd;
+            border-top: none;
+            overflow: hidden;
+            .car_bottom_right{
+                float: right;
+                width: 200px;
+                height: auto;
+                margin:10px 10px 0 0;
+                table{
+                    font-size: 12px;
+                    tr{
+                        vertical-align: inherit;
+                        td{
+                            text-align: right;
+                            &.td_totle{
+                                width: 60px;
+                            }
+                            &.td_price{
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .car_totle{
+                width: 1196px;
+                
+                min-height: 74px;
+                height: auto;
+                line-height: 26px;
+                border: solid 1px #ddd;
+                border-top: none;
+                
+                background: #fdfdfd;
+                text-align: right;
+                line-height: 45px;
+                font-size: 14px;
+                span{
+                        font: 22px/30px 'Microsoft YaHei';
+                        color: #bf0000;
+                }
+        }
+       
+    }
+}
+.car_recommend{
+    height: auto;
+    border-top:1px #ddd solid;
+    margin:30px auto;
+    .recommend_tab{
+        width: 100%;
+        height: 35px;
+        margin-top: 30px;
+        background: #d8d7d7;
+        text-indent: 15px;
+        font-size: 16px;
+        line-height: 35px;
+        position: relative;
+        span{
+            float: right;
+            margin-top: 4px;
+            a{
+                float: left;
+                display: block;
+                width: 140px;
+                height: 26px;
+                background: #8a8a8a;
+                color: #FFF;
+                text-align: center;
+                text-indent: 0;
+                font-size: 14px;
+                line-height: 26px;
+                &.current{
+                    background: #FFF;
+                    color: #8a8a8a;
+                }
+            }
+        }
+    }
+    .recommend_all{
+        position: relative;
+        padding: 10px 40px;
+        width: 1118px;
+        border: 1px solid #DDD;
+        ul{
+            overflow: hidden;
+          li{
+              float: left;
+              display: block;
+              width: 180px;
+              margin: 10px 0;
+              margin-right: 7px;
+              img{
+                  width: 100%;
+              }
+              p{
+                  overflow: hidden;
+                    margin: 0;
+                    width: 100%;
+                    height: 22px;
+                    font-size: 12px;
+              }
+              span{
+                    color: #ca0a2a;
+                    font-size: 14px;
+                    line-height: 20px;
+              }
+          }  
+        }
+    }
+}

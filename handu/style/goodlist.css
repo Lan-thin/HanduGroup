@@ -1,0 +1,328 @@
+.good_list {
+  overflow: hidden;
+}
+.good_list .good_left {
+  width: 180px;
+  float: left;
+}
+.good_list .good_left .list_type {
+  border: 1px solid #ddd;
+  border-bottom: none;
+  width: 178px;
+  height: 100%;
+  background: #FFF;
+  margin-top: 25px;
+}
+.good_list .good_left .list_type > dl {
+  color: #333333;
+  text-indent: 8px;
+  height: 39px;
+  font: 12px/20px '宋体';
+  overflow: hidden;
+}
+.good_list .good_left .list_type > dl.on {
+  height: auto;
+  border-bottom: 1px solid #DDD;
+}
+.good_list .good_left .list_type > dl dt {
+  font: bold 14px/30px 'microsfot yahei';
+  border-bottom: 1px solid #DDD;
+  padding-top: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.good_list .good_left .list_type > dl dt a {
+  color: #333;
+}
+.good_list .good_left .list_type > dl dt i {
+  background: url(../images/goods/tri.png) no-repeat -2px -6px;
+  width: 5px;
+  height: 8px;
+  right: 11px;
+  position: absolute;
+  top: 18px;
+}
+.good_list .good_left .list_type > dl > dd.on {
+  height: auto;
+  border-bottom: 1px solid #DDD;
+}
+.good_list .good_left .list_type > dl > dd.on h3 {
+  background: url(../images/goods/minus.png) no-repeat 10px center;
+}
+.good_list .good_left .list_type > dl > dd h3 {
+  padding-left: 20px;
+  cursor: pointer;
+  background: url(../images/goods/plus.png) 10px center no-repeat;
+  font: 12px/26px '宋体';
+}
+.good_list .good_left .list_type > dl > dd h3 a {
+  color: #333;
+}
+.good_list .good_left .list_type > dl > dd ul {
+  display: none;
+}
+.good_list .good_left .list_type > dl > dd ul li {
+  line-height: 26px;
+}
+.good_list .good_left .list_type > dl > dd ul li a {
+  color: #666;
+}
+.good_list .good_left .list_type > dl > dd ul li span {
+  color: #999;
+  padding-left: 4px;
+}
+.good_list .good_left .list_hot {
+  width: 180px;
+  margin-top: 10px;
+}
+.good_list .good_left .list_hot .hot_title {
+  background: #333;
+  font-size: 14px;
+  color: #FFF;
+  height: 25px;
+  line-height: 25px;
+  text-indent: 5px;
+}
+.good_list .good_left .list_hot .hot_list {
+  border: 1px solid #CCC;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+.good_list .good_left .list_hot .hot_list li {
+  padding: 8px 8px;
+}
+.good_list .good_left .list_hot .hot_list li a {
+  display: block;
+}
+.good_list .good_left .list_hot .hot_list li a img {
+  width: 162px;
+  height: 162px;
+}
+.good_list .good_left .list_hot .hot_list li a p {
+  width: 100%;
+  overflow: hidden;
+  font-family: arial;
+  font-size: 14px;
+  line-height: 25px;
+}
+.good_list .good_left .list_hot .hot_list li a p .hot_money {
+  float: left;
+  color: #c80a28;
+}
+.good_list .good_left .list_hot .hot_list li a p .hot_sell {
+  float: right;
+}
+.good_list .good_left .list_hot .hot_list li a p .hot_sell span {
+  color: #c80a28;
+}
+.good_list .good_left .list_hot .hot_list li a div {
+  color: #666;
+}
+.good_list .good_right {
+  float: right;
+  width: 1000px;
+}
+.good_list .good_right .location {
+  font-size: 12px;
+  text-indent: 5px;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 10px;
+}
+.good_list .good_right .location a {
+  margin: 0 5px;
+}
+.good_list .good_right .slide {
+  height: 30px;
+  border: 1px solid #DDD;
+  overflow: hidden;
+}
+.good_list .good_right .slide ul {
+  float: left;
+  overflow: hidden;
+  margin-right: 40px;
+}
+.good_list .good_right .slide ul li {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  text-indent: -10px;
+  text-align: center;
+  border-right: 1px solid #DDD;
+}
+.good_list .good_right .slide ul li a {
+  line-height: 30px;
+  position: relative;
+  font-size: 12px;
+}
+.good_list .good_right .slide ul li a i {
+  display: block;
+  background: url(../images/goods/arrs.png) no-repeat -9px -1px;
+  position: absolute;
+  right: -10px;
+  top: 5px;
+  width: 7px;
+  height: 8px;
+}
+.good_list .good_right .slide .random {
+  width: 100px;
+  float: left;
+  position: relative;
+  height: 30px;
+  line-height: 25px;
+}
+.good_list .good_right .slide .random input {
+  padding: 1px 1px;
+  width: 37px;
+  height: 18px;
+  color: #666;
+  border: 1px solid #d6d6d6;
+  line-height: 30px;
+  outline: none;
+}
+.good_list .good_right .slide .checkbox {
+  float: left;
+  margin: 0 14px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.good_list .good_right .slide .checkbox input {
+  border: #ddd 1px solid;
+  background: #fff;
+  margin: 10px 5px;
+}
+.good_list .good_right .slide .change {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+  margin-right: 10px;
+}
+.good_list .good_right .slide .change a {
+  font-weight: bold;
+  padding: 1px 3px 0;
+  border: 1px solid #CCC;
+  vertical-align: bottom;
+  cursor: pointer;
+  margin-right: 5px;
+  line-height: 28px;
+}
+.good_list .good_right .list_all {
+  padding-top: 10px;
+}
+.good_list .good_right .list_all ul {
+  width: 1030px;
+  height: auto;
+  overflow: hidden;
+}
+.good_list .good_right .list_all ul li {
+  padding-bottom: 0;
+  width: 240px;
+  height: 373px;
+  border: 1px solid #ddd;
+  margin: 0 10px 20px 0;
+  float: left;
+}
+.good_list .good_right .list_all ul li a {
+  display: block;
+  padding: 8px;
+}
+.good_list .good_right .list_all ul li a img {
+  margin: 5px 0;
+  width: 222px;
+  height: 222px;
+}
+.good_list .good_right .list_all ul li a .small_img {
+  width: 30px;
+  height: 30px;
+}
+.good_list .good_right .list_all ul li a .good_price {
+  height: 30px;
+  line-height: 40px;
+  margin: 0 0 6px;
+  letter-spacing: normal;
+  overflow: hidden;
+}
+.good_list .good_right .list_all ul li a .good_price span {
+  font-weight: 400;
+  font-size: 20px;
+  color: #c80a28;
+  float: left;
+}
+.good_list .good_right .list_all ul li a .good_price del {
+  float: left;
+  margin-top: 2px;
+  margin-left: 5px;
+  color: #999;
+}
+.good_list .good_right .list_all ul li a .good_name {
+  width: 100%;
+  height: 18px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+}
+.good_list .good_right .list_all ul li a .other {
+  position: relative;
+  height: 47px;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-bottom: 0;
+  color: #999;
+  width: 100%;
+}
+.good_list .good_right .list_all ul li a .other span {
+  float: left;
+  display: inline-block;
+  border-right: 1px solid #eee;
+  width: 45%;
+  height: 29px;
+  padding: 8px 5px;
+  line-height: 15px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.good_list .good_right .list_all ul li a .other span em {
+  font-style: normal;
+  font-size: 14px;
+}
+.good_list .good_right .list_all .page {
+  text-align: center;
+  margin: 30px 0;
+  color: #888;
+  font: 12px/1.5;
+  overflow: hidden;
+}
+.good_list .good_right .list_all .page .page_num {
+  float: left;
+  margin-left: 370px;
+}
+.good_list .good_right .list_all .page .page_num a {
+  display: inline-block;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  margin: 0 6px;
+  border: 1px solid #DDD;
+}
+.good_list .good_right .list_all .page .page_num a.strong {
+  background-color: #eeeeee;
+  border: 1px solid #DDD;
+}
+.good_list .good_right .list_all .page .next {
+  display: inline-block;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  margin: 0 6px;
+  border: 1px solid #DDD;
+  width: 60px;
+  float: left;
+  background: #eeeeee;
+}

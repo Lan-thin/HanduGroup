@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/public.css" type="text/css" />
+		<link rel="stylesheet" href="style/details.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/details.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+	</head>
+	<body>
+		<div id="global_top">
+			<script type="text/javascript">$("#global_top").load("public.html .global_nav");</script>
+		</div>
+		<div id="global_header">
+			<script type="text/javascript">$("#global_header").load("public.html .global_header");</script>
+		</div>
+		<div id="global_nav">
+			<script type="text/javascript">$("#global_nav").load("public.html .header_nav",function(){
+				$(".nav_all").mouseover(function(){
+					$(".pullList").show();
+				})
+				$(".nav_all").mouseout(function(){
+					$(".pullList").hide();
+				})
+				$(".header_nav_all").find(".fright").mouseover(function(){
+					$(this).find("ul").show();
+					$(this).siblings().find("ul").hide();
+				})
+				$(".header_nav_all").find(".fright").mouseout(function(){
+					$(this).find("ul").hide();
+					
+				})
+				$(".pullList>li").mouseover(function(){
+					$(this).parent().next(".menu_all").show()
+					$(this).css("background-color","#333");
+					$(this).find("h3").css("color","#fff");
+					$(this).find("a").css("color","#fff");
+					$(this).find("h3").children("i").stop().animate({marginLeft:10},500);
+					$(this).find("img").eq(0).hide().end().eq(1).show()
+				})
+				$(".pullList>li").mouseout(function(){
+					$(this).parent().next(".menu_all").hide()
+					$(this).css("background-color","#e3e3e3");
+					$(this).find("h3").css("color","#333");
+					$(this).find("a").css("color","#333");
+					$(this).find("h3").children("i").stop().animate({marginLeft:0},500);
+					$(this).find("img").eq(1).hide().end().eq(0).show()
+				})
+			})
+			</script>
+		</div>
+		<div class="main layout">
+			<div class="location">
+				<a href="">你所在的位置</a>>
+				<a href="">韩都衣舍</a>>
+				<a href=""> HSTYLE女装 </a>>
+				<a href="">裙装</a>>
+				<a href="">连衣裙</a>>
+				韩都衣舍2017韩版女装夏装新款显瘦蕾丝外搭两件套连衣裙RW7505瑒
+			</div>
+			<div class="side_bar">
+				<h1></h1>
+				<ul>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">半身裙</a></li>
+					<img src="images/1490249473040110030.jpg"/>
+				</ul>
+				<div class="good_new share">
+					<h1></h1>
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="good_hot share">
+					<h1></h1>
+					<ul>
+						<!--<li class="new_box"><a href="">
+							<img src="images/goods/20170528000503_GY9281.jpg" alt="" />
+							<ul >
+								<li class="good_name"> 韩都衣舍2017韩版女装夏装新款显瘦蕾丝外搭两件套连衣裙RW7505瑒</li>
+								<li><span class="new_price">58</span> <span class="old_price">100</span></li>
+							</ul>
+						</a>
+						
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="good_detail">
+				<div class="detail_top">
+					<div class="detail_top_left">
+						<div class="good_small" id="good_small">
+							<img src="images/details/1061064_G_1499753947988.jpg" alt=""style="z-index: 1;"/> 
+		        			<img src="images/details/201706261506381_RW7505.jpg" alt=""/> 
+		         			<img src="images/details/201706261506382_RW7505.jpg" alt=""/> 
+		         			<img src="images/details/201706261506383_RW7505.jpg" alt=""/>
+		         			<img src="images/details/201706261506384_RW7505.jpg" alt="" />
+						</div>
+						<div id="mask"></div> 
+						<ul id="small_img">
+							<li><s></s><img src="images/details/1061064_thumb_P_1499753947561.jpg"/></li>
+							<li><s></s><img src="images/details/1498462238849961403.jpg" alt="" /></li>
+							<li><s></s><img src="images/details/1498462239633404608.jpg" alt="" /></li>
+							<li><s></s><img src="images/details/1498462239294498509.jpg" alt="" /></li>
+							<li><s></s><img src="images/details/1498462239127776530.jpg"/></li>
+						</ul>
+						<ul class="share">
+							<li><a href="" class="like">收藏(1)</a></li>
+							<li><a href="" class="share_to">分享到:</a>
+								<a href="" class="qzone"></a>
+								<a href="" class="sina"></a>
+								<a href="" class="wb"></a>
+								<a href="" class="ren"></a>
+								<a href="" class="wy"></a>
+								<a href="" class="add_share">0</a>
+							</li>
+						</ul>
+					</div>
+					<div class="good_big" id="good_big" style="display: none;">
+						<img src="images/details/1061064_G_1499753947988.jpg" alt=""/> 
+		        		<img src="images/details/201706261506381_RW7505.jpg" alt=""/> 
+		         		<img src="images/details/201706261506382_RW7505.jpg" alt=""/> 
+		         		<img src="images/details/201706261506383_RW7505.jpg" alt=""/>
+		         		<img src="images/details/201706261506384_RW7505.jpg" alt="" />
+					</div>
+					<div class="detail_top_right">
+						<div class="good_detail_info">
+							<h1><span id="name">韩都衣舍2017韩版女装夏装新款显瘦蕾丝外搭两件套连衣裙RW7505瑒</span><br />
+								<a href=""><span id="active" style="color:#c80a28;">【全智贤秋装新品发布会】满199减20/满299减50/满399减100！</span></a>
+							</h1>
+							<ul>
+								<li>
+             					商品货号：&nbsp;&nbsp;<span class="code">RW7505</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                          			售价<del style="color:#666;font-weight: border;">¥<span id="oldprice">288.00</span></del>
+                       			 </li>
+                       			<li>促&nbsp;&nbsp;销&nbsp;&nbsp;价: <span style="color:#c80a28;font-size: 20px;margin-left: 20px;">¥ <span id="price">148.00 </span> </span></li>
+                       			<li>销&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：<span style="margin-left: 20px;">11</span></li>
+                       			<li>用户评分:  <span style="display: inline-block;background: url(images/star-s.png) no-repeat 0 -17px;height: 12px;width: 79px; margin-left: 20px;"></span><span>（共有<a href="" style="color: #C80A28;">1</a>条评论）</span></li>
+							</ul>
+						</div>
+						<div class="good_detail_buy">
+							<ul>
+								<li><span>尺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;:</span>
+									<ul class="size" id="size">
+										<li>L</li>
+										<li>S</li>
+										<li>M</li>
+									</ul>
+								</li>
+								<li><span>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色&nbsp;&nbsp;:</span>
+									<ul class="size" id="color">
+										<li>黑色</li>
+										<li>粉色</li>
+									</ul>
+								</li>
+								<li><span>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量&nbsp;&nbsp;:</span>
+									<span id="subtract" class="increase">-</span><input type="text" id="num" value="1" /><span id="add" class="increase">+</span><span style="width: 100px;margin-top: 3px;">（库存64件）</span>
+								</li>
+							</ul>
+							<p id="select_good"><span id="select_type">你未选择</span><span id="select_size"></span><span id="select_color"></span></p>
+							<p><a href="" class="buy"></a><a href="javascript:;" class="addCar"></a></p>
+						</div>
+						<div class="other_info">
+							<ul>
+								<li><a href="">在线客服<span class="qq"></span></a></li>
+								<li>官方微信<span class="wchat"></span></li>
+								<img src="images/sys.gif" alt="" />
+							</ul>   
+							<p>支付方式：<a href="">支付宝</a><a href="" style="margin-right: 30px;">网上银行付款</a> 服务承诺：<span></span></p>
+						</div>
+					</div>
+				</div>	
+				<div class="detail_bottom">
+					<div class="tab">
+						<ul>
+							<li class="click">商品详情</li>
+							<li>评论详情</li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+						
+					</div>
+					<div class="tab_detail">
+							<img src="images/details/details.jpg"/>
+							<div class="start">
+								<a href=""><img src="" alt="" /></a>
+								<a href=""><img src="" alt="" /></a>
+								<a href=""><img src="" alt="" /></a>
+							</div>
+							<img src="images/details/750_02.jpg"/>
+							<div class="good_images">
+								<a href=""><img src="images/details/sx_01.jpg"/></a>
+								<a href=""><img src="images/details/sx_02.jpg"/></a>
+								<a href=""><img src="images/details/sx_03.jpg"/></a>
+								<a href=""><img src="images/details/sx_04.jpg"/></a>
+								<a href=""><img src="images/details/sx_05.jpg"/></a>
+								<a href=""><img src="images/details/sx_06.jpg"/></a>
+								<a href=""><img src="images/details/sx_07.jpg"/></a>
+								<a href=""><img src="images/details/sx_08.jpg"/></a>
+								<a href=""><img src="images/details/sx_09.jpg"/></a>
+								<a href=""><img src="images/details/sx_10.jpg"/></a>
+								<a href=""><img src="images/details/sx_11.jpg"/></a>
+								<a href=""><img src="images/details/sx_12.jpg"/></a>
+							</div>
+							<img src="images/details/TB2WCt.uB0lpuFjSszdXXcdxFXa-263817957.jpg"/>
+							<img src="images/details/TB2XJlWuChlpuFjSspkXXa1ApXa-263817957.jpg" alt="" />
+							<img src="images/details/TB2dlLluq8lpuFjy0FpXXaGrpXa-263817957.jpg" alt="" />
+							<img src="images/details/TB2H7_durFkpuFjy1XcXXclapXa-263817957.jpg" alt="" />
+							<img src="images/details/TB2Gs1luwxlpuFjSszgXXcJdpXa-263817957.jpg" alt="" />
+							<img src="images/details/TB22AJQuwNlpuFjy0FfXXX3CpXa-263817957.jpg"/>
+							<img src="images/details/TB2foKguCtkpuFjy0FhXXXQzFXa-263817957.jpg" alt="" />
+							<img src="images/details/TB2FZb3mH_0UKFjy1XaXXbKfXXa-263817957.jpg"/>
+							<img src="images/details/TB285zauwJlpuFjSspjXXcT.pXa-263817957.jpg" alt="" />
+							<img src="images/details/TB2uZrfur8kpuFjy0FcXXaUhpXa-263817957.jpg" alt="" />
+							<img src="images/details/TB2eSyyurtlpuFjSspoXXbcDpXa-263817957.jpg"/>
+							<img src="images/details/TB218bPuq8lpuFjy0FpXXaGrpXa-263817957.jpg"/>
+							<img src="images/details/size.jpg" alt="" />
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div id="global_bottom">
+			<script type="text/javascript">$("#global_bottom").load("public.html .bottom");</script>
+		</div>
+		<div id="global_footer">
+			<script type="text/javascript">$("#global_footer").load("public.html .footer");</script>
+		</div>
+		<div id="right_box">
+		<script type="text/javascript">$("#right_box").load("public.html .right_box",function(){
+			$(window).scroll(function(){
+				if($(document).scrollTop()>200){
+					$(".right_box").show();
+				}else{
+					$(".right_box").hide();
+				}
+			})
+			$(".right_box>a").mouseenter(function(){
+				$(this).css("background-position-x","-78px")
+			})
+			$(".right_box>a").mouseout(function(){
+				$(this).css("background-position-x","0")
+			})
+		});
+		</script>
+	</div>
+	</body>
+</html>
+
+	
